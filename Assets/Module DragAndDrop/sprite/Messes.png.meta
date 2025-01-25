@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8432ab976959e4b468f54981348c1ca8
+guid: 5a1c49261878c5c4ab23e39eb6395670
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7297464878100623700
-    second: Meja_0
+      213: -3899788271234296250
+    second: Messes_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Meja_0
+      name: Messes_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 258
-        height: 258
+        x: 16
+        y: 48
+        width: 29
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cae4ce36b523aba90800000000000000
-      internalID: -7297464878100623700
+      spriteID: 64658d1ba3b21e9c0800000000000000
+      internalID: -3899788271234296250
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Meja_0: -7297464878100623700
+      Messes_0: -3899788271234296250
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

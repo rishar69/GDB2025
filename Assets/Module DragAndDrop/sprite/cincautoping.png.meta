@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8432ab976959e4b468f54981348c1ca8
+guid: f26fbab35a78b9342a5a15045192172f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7297464878100623700
-    second: Meja_0
+      213: 710956178309231994
+    second: cincautoping_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Meja_0
+      name: cincautoping_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 258
-        height: 258
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 19
+        y: 6
+        width: 21
+        height: 14
+      alignment: 9
+      pivot: {x: 0.57378757, y: 1.8922602}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cae4ce36b523aba90800000000000000
-      internalID: -7297464878100623700
+      spriteID: a75bdfa90e2ddd900800000000000000
+      internalID: 710956178309231994
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Meja_0: -7297464878100623700
+      cincautoping_0: 710956178309231994
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

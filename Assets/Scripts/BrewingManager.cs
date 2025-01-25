@@ -5,6 +5,7 @@ using UnityEngine;
 public class BrewingManager : MonoBehaviour
 {
     public GameObject brewingPanel;
+    public GameObject brewing;
 
     private List<string> selectedIngredients = new List<string>();
 
@@ -24,6 +25,7 @@ public class BrewingManager : MonoBehaviour
         }
 
         brewingPanel.SetActive(true);
+        brewing.SetActive(true);
         Debug.Log("Start Brewing");
 
 
@@ -59,5 +61,6 @@ public class BrewingManager : MonoBehaviour
         brewingPanel.SetActive(false);
         selectedIngredients.Clear();
         isBrewingInProgress = false;
+        brewing.SetActive(false);
     }
 }

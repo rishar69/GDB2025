@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8432ab976959e4b468f54981348c1ca8
+guid: fb5bf59522d802a4a9d94727cafbb22c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7297464878100623700
-    second: Meja_0
+      213: 8789150248694474043
+    second: Sendok_keju_parut_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Meja_0
+      name: Sendok_keju_parut_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 258
-        height: 258
+        x: 29
+        y: 53
+        width: 82
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cae4ce36b523aba90800000000000000
-      internalID: -7297464878100623700
+      spriteID: b3568f2959559f970800000000000000
+      internalID: 8789150248694474043
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Meja_0: -7297464878100623700
+      Sendok_keju_parut_0: 8789150248694474043
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

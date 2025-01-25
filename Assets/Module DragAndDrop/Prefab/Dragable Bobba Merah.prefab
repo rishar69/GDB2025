@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 7343220648199848752}
   - component: {fileID: 4863723734254856268}
   - component: {fileID: 956958925942677124}
-  - component: {fileID: -3992166235296700384}
-  - component: {fileID: 3027270696067433894}
+  - component: {fileID: -3069131498374278265}
+  - component: {fileID: -1489590844468991611}
   m_Layer: 0
-  m_Name: Base Matcha
+  m_Name: Dragable Bobba Merah
   m_TagString: Topping
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.52, y: -0.31, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,8 +79,8 @@ SpriteRenderer:
   m_SortingLayerID: 818337593
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.4415095, g: 0.25484478, b: 0, a: 1}
+  m_Sprite: {fileID: 4268554071594599424, guid: a4ac8784026d4ac40a91aecacb2c2e57, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -128,7 +128,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.82, y: 0.45}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -136,7 +136,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-3992166235296700384
+--- !u!114 &-3069131498374278265
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,10 +148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd326672e18a255409b0496a35c3becc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toppingName: Matcha
-  type: 0
-  toppingColor: {r: 0.37647063, g: 0.227451, b: 0, a: 1}
---- !u!50 &3027270696067433894
+  toppingName: BobbaMerah
+  type: 2
+--- !u!50 &-1489590844468991611
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8432ab976959e4b468f54981348c1ca8
+guid: a4ac8784026d4ac40a91aecacb2c2e57
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7297464878100623700
-    second: Meja_0
+      213: 4268554071594599424
+    second: Sendok_bobamerah._0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Meja_0
+      name: Sendok_bobamerah._0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 258
-        height: 258
+        x: 29
+        y: 53
+        width: 82
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cae4ce36b523aba90800000000000000
-      internalID: -7297464878100623700
+      spriteID: 00481f5ff43fc3b30800000000000000
+      internalID: 4268554071594599424
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Meja_0: -7297464878100623700
+      Sendok_bobamerah._0: 4268554071594599424
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

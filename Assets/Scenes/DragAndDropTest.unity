@@ -1322,6 +1322,10 @@ PrefabInstance:
       value: ToppingPlace (7)
       objectReference: {fileID: 0}
     - target: {fileID: 7277954701218546953, guid: 3d4237ef8bea0f744ac24b6dfde85dbb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8380042867055999820, guid: 8a55184c1984bff4cba558681ff5743d, type: 3}
+    - target: {fileID: 7277954701218546953, guid: 3d4237ef8bea0f744ac24b6dfde85dbb, type: 3}
       propertyPath: m_SortingLayer
       value: 1
       objectReference: {fileID: 0}
@@ -1467,6 +1471,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1116886874636909613, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: m_Size.x
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116886874636909613, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: m_Size.y
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116886874636909613, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116886874636909613, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787558006548331384, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787558006548331384, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787558006548331384, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787558006548331384, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.234
+      objectReference: {fileID: 0}
+    - target: {fileID: 2196207002593687547, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3262908330858805501, guid: bf45291d099aec442864d26d15d05136, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.13
@@ -1507,6 +1547,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3523163290256548710, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: m_Size.x
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523163290256548710, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: m_Size.y
+      value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523163290256548710, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523163290256548710, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4570953567359598120, guid: bf45291d099aec442864d26d15d05136, type: 3}
       propertyPath: m_Name
       value: Cup
@@ -1519,6 +1575,30 @@ PrefabInstance:
       propertyPath: resetButton
       value: 
       objectReference: {fileID: 1006800648}
+    - target: {fileID: 8918782406932642932, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: spriteVariants.Array.data[3].toppingName
+      value: Oreo
+      objectReference: {fileID: 0}
+    - target: {fileID: 8918782406932642932, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: 'spriteVariants.Array.data[3].sprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: 5693478102345609468, guid: f9a9a35b50895c845b7fcb258f233b88, type: 3}
+    - target: {fileID: 8918782406932642932, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: 'spriteVariants.Array.data[4].sprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: -3899788271234296250, guid: 5a1c49261878c5c4ab23e39eb6395670, type: 3}
+    - target: {fileID: 8918782406932642932, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: 'spriteVariants.Array.data[5].sprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: -8777016533707829425, guid: 33fadfc66c71d9d458b5b499973f838e, type: 3}
+    - target: {fileID: 8918782406932642932, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: 'spriteVariants.Array.data[6].sprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: 710956178309231994, guid: f26fbab35a78b9342a5a15045192172f, type: 3}
+    - target: {fileID: 8918782406932642932, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: 'spriteVariants.Array.data[8].sprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: -7479275317366854167, guid: 4cf3b75b602bd7d4abad01cc949cf135, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1872,6 +1952,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2052251372}
     m_Modifications:
+    - target: {fileID: 1997757485472074464, guid: f619d90c463c47240a992de6c6399dcf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5116170413119388678, guid: 310adc3ed35a34845a6d5ea2ceef9df8, type: 3}
     - target: {fileID: 1997757485472074464, guid: f619d90c463c47240a992de6c6399dcf, type: 3}
       propertyPath: m_SortingLayer
       value: 1
