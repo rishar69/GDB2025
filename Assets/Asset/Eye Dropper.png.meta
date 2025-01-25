@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 04361d970a13b284d9180f16fff6b5ca
+guid: 3bd21c9eb762eaf4eb836eeed23a1b81
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2075449598846560187
-    second: Bubble Banyak_0
+      213: -6235417878821469282
+    second: Eye Dropper_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bubble Banyak_0
+      name: Eye Dropper_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 3
-        width: 58
-        height: 58
+        x: 9
+        y: 9
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bb7e978f96a7dcc10800000000000000
-      internalID: 2075449598846560187
+      spriteID: e930ab2d9785779a0800000000000000
+      internalID: -6235417878821469282
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Bubble Banyak_0: 2075449598846560187
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

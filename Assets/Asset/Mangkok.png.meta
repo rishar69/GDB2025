@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 04361d970a13b284d9180f16fff6b5ca
+guid: bac6c511a667ba645b3fdc3842721faa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2075449598846560187
-    second: Bubble Banyak_0
+      213: 2291205153906304958
+    second: Mangkok_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bubble Banyak_0
+      name: Mangkok_0
       rect:
         serializedVersion: 2
         x: 3
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bb7e978f96a7dcc10800000000000000
-      internalID: 2075449598846560187
+      spriteID: eb7212ab2fefbcf10800000000000000
+      internalID: 2291205153906304958
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Bubble Banyak_0: 2075449598846560187
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
