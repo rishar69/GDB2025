@@ -1,17 +1,19 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class StirScript : MonoBehaviour
 {
-    public Image belumMateng;       // Image for "not stirred" state
-    public Image lagiDiAduk;        // Image for "stirring" state
-    public Image udahJadi;          // Image for "finished" state
-    public Slider progressBar;      // UI Slider for progress
-    public TMP_Text pesanBerhasil;  // UI Text for success message
-    public TMP_Text pesanAwal;      // UI Text for the initial message
+    public Image belumMateng; // Image for "not stirred" state
+    public Image lagiDiAduk;  // Image for "stirring" state
+    public Image udahJadi;    // Image for "finished" state
+    public Slider progressBar;   // UI Slider for progress
+    public GameObject panelBerhasil;  // Panel for success message
     public float kecepatanIsi = 0.01f; // Speed of progress bar filling
     public float toleransiReset = 0.2f; // Distance tolerance to detect circular movement
+    public float kecepatanRotasi = 100f; // Rotation speed for "stirring" image
+    public float kecepatanGerakPanel = 2f; // Speed of panel movement
     public int indeksSceneBerikutnya; // Index of the next scene to load
 
     private Vector3 posisiMouseSebelumnya; // To track mouse movement
@@ -25,13 +27,16 @@ public class StirScript : MonoBehaviour
         AturKeadaanGambar(lagiDiAduk, false);
         AturKeadaanGambar(udahJadi, false);
         progressBar.value = 0f;
-        pesanBerhasil.gameObject.SetActive(false);
 
-        // Show the initial message for 3 seconds
-        if (pesanAwal != null)
+        // Set the initial state of the success panel
+        if (panelBerhasil != null)
         {
-            pesanAwal.gameObject.SetActive(true);
-            Invoke("SembunyikanPesanAwal", 3f);
+            RectTransform panelRect = panelBerhasil.GetComponent<RectTransform>();
+            if (panelRect != null)
+            {
+                panelRect.anchoredPosition = new Vector2(1305.016f, panelRect.anchoredPosition.y);
+            }
+            panelBerhasil.SetActive(false);
         }
     }
 
@@ -65,6 +70,9 @@ public class StirScript : MonoBehaviour
                         AturKeadaanGambar(belumMateng, false);
                         AturKeadaanGambar(lagiDiAduk, true);
                         AturKeadaanGambar(udahJadi, false);
+
+                        // Rotate the "stirring" image
+                        RotateImage(lagiDiAduk);
                     }
 
                     // When progress is full
@@ -91,25 +99,34 @@ public class StirScript : MonoBehaviour
         AturKeadaanGambar(lagiDiAduk, false);
         AturKeadaanGambar(udahJadi, true);
 
-        // Show success message
-        pesanBerhasil.gameObject.SetActive(true);
-        Debug.Log("Adukan selesai!");
+        // Move success panel
+        if (panelBerhasil != null)
+        {
+            panelBerhasil.SetActive(true);
+            StartCoroutine(MovePanelToTarget());
+        }
 
         // Change to the next scene after a short delay
         Invoke("GantiScene", 2f); // 2-second delay before switching scenes
     }
 
+    private IEnumerator MovePanelToTarget()
+    {
+        RectTransform panelRect = panelBerhasil.GetComponent<RectTransform>();
+        Vector2 targetPosition = new Vector2(0f, panelRect.anchoredPosition.y);
+
+        while (Vector2.Distance(panelRect.anchoredPosition, targetPosition) > 0.01f)
+        {
+            panelRect.anchoredPosition = Vector2.Lerp(panelRect.anchoredPosition, targetPosition, kecepatanGerakPanel * Time.deltaTime);
+            yield return null;
+        }
+
+        panelRect.anchoredPosition = targetPosition;
+    }
+
     void GantiScene()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(indeksSceneBerikutnya);
-    }
-
-    void SembunyikanPesanAwal()
-    {
-        if (pesanAwal != null)
-        {
-            pesanAwal.gameObject.SetActive(false);
-        }
     }
 
     // Helper method to toggle images
@@ -118,6 +135,15 @@ public class StirScript : MonoBehaviour
         if (gambar != null)
         {
             gambar.gameObject.SetActive(keadaan);
+        }
+    }
+
+    // Method to rotate an image around Z-axis
+    private void RotateImage(Image image)
+    {
+        if (image != null)
+        {
+            image.transform.Rotate(0f, 0f, kecepatanRotasi * Time.deltaTime);
         }
     }
 }
