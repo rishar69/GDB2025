@@ -12,10 +12,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Minigame_1.unity
     guid: 921e41b7cb8190f438f351720e3aedfa
   - enabled: 1
+    path: Assets/Scenes/Gameplay.unity
+    guid: 4d0c4b0b5e99eea48bbd592208c652d4
+  - enabled: 1
     path: Assets/Scenes/DragAndDropTest.unity
     guid: d114c89f60a06734aa0a2abd1e152c41
   - enabled: 1
-    path: Assets/Scenes/Gameplay.unity
+    path: Assets/Scenes/Gameplay 9.unity
     guid: ef2cdae3a5ef9b8478257d6d03aefb3e
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity

@@ -11,7 +11,7 @@ public class EmptyCup : MonoBehaviour
     [SerializeField] private Button resetButton;
     [SerializeField] private NamedSpriteVariant[] spriteVariants;
 
-    private Dictionary<string, string> categorizedToppings = new Dictionary<string, string>();
+    public Dictionary<string, string> categorizedToppings = new Dictionary<string, string>();
     private Dictionary<string, SpriteRenderer> categoryRenderers = new Dictionary<string, SpriteRenderer>();
     private Dictionary<string, int> toppingVariantIndices = new Dictionary<string, int>();
     private Sprite[] originalSprites;

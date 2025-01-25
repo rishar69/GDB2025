@@ -2560,7 +2560,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 72913aeb6aa34854b8440ca3c8510dc0, type: 3}
   - name: messagein
     clip: {fileID: 8300000, guid: 80318d87adff55e41a7eec0116bd5837, type: 3}
-  - name: notofication_in
+  - name: notification_in
     clip: {fileID: 8300000, guid: b08aa603cc6c6d245836d63f95e1c156, type: 3}
   - name: capturepicture
     clip: {fileID: 8300000, guid: 2fce2cf9b4ed2d244afa12dde8adec60, type: 3}

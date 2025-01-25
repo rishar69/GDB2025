@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Oreo_0: 3298969833562255172
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

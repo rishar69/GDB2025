@@ -27,7 +27,6 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public int currentDay;
 
     [Header("References")]
-    //public DialogManager dialogManager;
     public AnimationManager animationManager;
     public RecipeManager recipeManager;
     public BrewingManager brewingManager;
@@ -81,7 +80,6 @@ public class GameManager : MonoBehaviour
             StartCoroutine(FadeCoroutine(1f, 0f, 2f, dayPanel.GetComponent<CanvasGroup>(), () =>
             {
                 dayPanel.SetActive(false);
-                //dialogManager.Init();
                 storyManager.Init(stories[currentDay]);
             }));
 
