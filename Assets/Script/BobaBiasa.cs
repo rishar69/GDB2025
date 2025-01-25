@@ -4,11 +4,12 @@ using UnityEngine.UI;
 
 public class StirScript : MonoBehaviour
 {
-    public Image belumMateng; // Image for "not stirred" state
-    public Image lagiDiAduk;  // Image for "stirring" state
-    public Image udahJadi;  // Image for "finished" state
-    public Slider progressBar;   // UI Slider for progress
+    public Image belumMateng;       // Image for "not stirred" state
+    public Image lagiDiAduk;        // Image for "stirring" state
+    public Image udahJadi;          // Image for "finished" state
+    public Slider progressBar;      // UI Slider for progress
     public TMP_Text pesanBerhasil;  // UI Text for success message
+    public TMP_Text pesanAwal;      // UI Text for the initial message
     public float kecepatanIsi = 0.01f; // Speed of progress bar filling
     public float toleransiReset = 0.2f; // Distance tolerance to detect circular movement
     public int indeksSceneBerikutnya; // Index of the next scene to load
@@ -25,6 +26,13 @@ public class StirScript : MonoBehaviour
         AturKeadaanGambar(udahJadi, false);
         progressBar.value = 0f;
         pesanBerhasil.gameObject.SetActive(false);
+
+        // Show the initial message for 3 seconds
+        if (pesanAwal != null)
+        {
+            pesanAwal.gameObject.SetActive(true);
+            Invoke("SembunyikanPesanAwal", 3f);
+        }
     }
 
     void Update()
@@ -94,6 +102,14 @@ public class StirScript : MonoBehaviour
     void GantiScene()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(indeksSceneBerikutnya);
+    }
+
+    void SembunyikanPesanAwal()
+    {
+        if (pesanAwal != null)
+        {
+            pesanAwal.gameObject.SetActive(false);
+        }
     }
 
     // Helper method to toggle images
