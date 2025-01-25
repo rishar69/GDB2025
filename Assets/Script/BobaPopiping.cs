@@ -5,14 +5,16 @@ using UnityEngine.SceneManagement;
 public class BobaPopiping : MonoBehaviour
 {
     public GameObject circlePrefab; // Assign a circle prefab in the inspector
-    public TMP_Text countText;         // Assign a UI Text element for displaying count
-    public TMP_Text messageText;       // Assign a UI Text element for "Passed" or "Failed" message
-    public TMP_Text timerText;         // Assign a UI Text element for the timer
-    public string nextSceneName;   // Name of the next scene to load if the player wins
+    public TMP_Text countText;      // Assign a TMP_Text element for displaying count
+    public TMP_Text messageText;    // Assign a TMP_Text element for "Passed" or "Failed" message
+    public TMP_Text timerText;      // Assign a TMP_Text element for the timer
+    public string nextSceneName;    // Name of the next scene to load if the player wins
 
-    private int circleCount = 0;   // Counter for circles spawned
-    private const int targetCount = 100; // Target count to reach
-    private float timer = 30f;     // Timer in seconds
+    public Transform[] spawnPoints; // Array of spawn points for the circles
+
+    private int circleCount = 0;    // Counter for circles spawned
+    private const int targetCount = 50; // Target count to reach
+    private float timer = 60f;      // Timer in seconds
     private bool isGameOver = false; // Flag to check if the game is over
 
     void Start()
@@ -29,12 +31,15 @@ public class BobaPopiping : MonoBehaviour
 
         // Decrease the timer
         timer -= Time.deltaTime;
+
+        // Ensure the timer doesn't go below zero
+        if (timer < 0f) timer = 0f;
+
         UpdateTimerText();
 
         // Check if the timer has reached zero
-        if (timer <= 0f)
+        if (timer <= 0f && !isGameOver)
         {
-            timer = 0f;
             EndGame(false); // Game over with failure
         }
 
@@ -49,11 +54,11 @@ public class BobaPopiping : MonoBehaviour
     {
         if (circleCount < targetCount && !isGameOver)
         {
-            // Get mouse position and convert to world point
-            Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            spawnPosition.z = 0f; // Set Z to 0 for 2D
+            // Randomly select a spawn point
+            int spawnIndex = Random.Range(0, spawnPoints.Length);
+            Vector3 spawnPosition = spawnPoints[spawnIndex].position;
 
-            // Instantiate the circle prefab at the calculated position
+            // Instantiate the circle prefab at the selected spawn point
             Instantiate(circlePrefab, spawnPosition, Quaternion.identity);
 
             // Increment the counter and update the UI
@@ -70,12 +75,13 @@ public class BobaPopiping : MonoBehaviour
 
     void UpdateCountText()
     {
-        countText.text = "Count: " + circleCount;
+        countText.text = "Bubbles: " + circleCount;
     }
 
     void UpdateTimerText()
     {
-        timerText.text = "Time: " + Mathf.Ceil(timer).ToString() + "s";
+        // Format timer to display whole seconds from 60 to 0
+        timerText.text = "Time Left: " + Mathf.Ceil(timer).ToString() + "s";
     }
 
     void EndGame(bool isSuccess)
