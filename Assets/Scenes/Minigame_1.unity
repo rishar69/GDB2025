@@ -232,7 +232,7 @@ MonoBehaviour:
   toleransiReset: 1.5
   kecepatanRotasi: 80
   kecepatanGerakPanel: 2.5
-  indeksSceneBerikutnya: 0
+  indeksSceneBerikutnya: 3
 --- !u!4 &74768006
 Transform:
   m_ObjectHideFlags: 0
