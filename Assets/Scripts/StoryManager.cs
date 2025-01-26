@@ -24,12 +24,6 @@ public class StoryBranch
     public int nextStepIndex; // Index langkah cerita berikutnya.
 }
 
-[CreateAssetMenu(fileName = "NewStoryData", menuName = "Story/StoryData")]
-public class StoryData : ScriptableObject
-{
-    public List<StoryStep> steps; // Semua langkah cerita.
-}
-
 public class StoryManager : MonoBehaviour
 {
 
