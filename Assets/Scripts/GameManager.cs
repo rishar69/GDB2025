@@ -49,14 +49,19 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        AudioManager.Instance.PlayBgm("BGM3");
+        if (HoldStoryData.Instance != null)
+            stories.Add(HoldStoryData.Instance.data);
 
-        Debug.Log("Story Count: " + stories.Count);
-        if (stories.Count <= 0)
-        {
-            stories.Add(Resources.Load<StoryData>("Day0"));
-            Debug.Log("Add Story from resources");
-        }
+        AudioManager.Instance?.PlayBgm("BGM3");
+
+        //Debug.Log("Story Count: " + stories.Count);
+        //if (stories.Count <= 0)
+        //{
+        //    stories.Add(Resources.Load<StoryData>("Day0"));
+        //    Debug.Log("Add Story from resources");
+        //}
+
+
 
         StartDay(0);
     }
