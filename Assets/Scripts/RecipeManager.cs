@@ -33,12 +33,16 @@ public class RecipeManager : MonoBehaviour
             return false;
         }
 
+        // Ubah semua elemen menjadi lowercase
+        List<string> lowerCorrectRecipe = correctRecipe.Select(item => item.ToLower()).ToList();
+        List<string> lowerInputRecipe = inputRecipe.Select(item => item.ToLower()).ToList();
+
         if (checkOrder)
         {
             // Periksa urutan bahan
-            for (int i = 0; i < correctRecipe.Count; i++)
+            for (int i = 0; i < lowerCorrectRecipe.Count; i++)
             {
-                if (!correctRecipe[i].Equals(inputRecipe[i]))
+                if (!lowerCorrectRecipe[i].Equals(lowerInputRecipe[i]))
                 {
                     Debug.Log("Urutan bahan tidak sesuai.");
                     return false;
@@ -48,7 +52,7 @@ public class RecipeManager : MonoBehaviour
         else
         {
             // Periksa tanpa memperhatikan urutan
-            if (correctRecipe.Except(inputRecipe).Any() || inputRecipe.Except(correctRecipe).Any())
+            if (lowerCorrectRecipe.Except(lowerInputRecipe).Any() || lowerInputRecipe.Except(lowerCorrectRecipe).Any())
             {
                 Debug.Log("Bahan tidak sesuai tanpa memperhatikan urutan.");
                 return false;

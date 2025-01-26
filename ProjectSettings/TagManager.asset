@@ -3,12 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Topping
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Draggable
   - Water
   - UI
   - 
@@ -41,8 +42,11 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: New Layer 1
-    uniqueID: 584361793
+  - name: topings
+    uniqueID: 818337593
+    locked: 0
+  - name: cursoredToppings
+    uniqueID: 3446111139
     locked: 0
   m_RenderingLayers:
   - Default

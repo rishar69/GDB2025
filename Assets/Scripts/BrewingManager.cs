@@ -1,15 +1,19 @@
 using Ink.Parsed;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BrewingManager : MonoBehaviour
 {
     public GameObject brewingPanel;
+    public GameObject brewing;
+    public GameObject dialogpanel;
 
     private List<string> selectedIngredients = new List<string>();
 
     private bool isBrewingInProgress = false;
 
+    public EmptyCup emptyCup;
 
     private void AddIngredients(string ingredients)
     {
@@ -24,6 +28,8 @@ public class BrewingManager : MonoBehaviour
         }
 
         brewingPanel.SetActive(true);
+        brewing.SetActive(true);
+        dialogpanel.SetActive(false);
         Debug.Log("Start Brewing");
 
 
@@ -32,18 +38,13 @@ public class BrewingManager : MonoBehaviour
 
     public void Serve(bool hasil)
     {
-        //bool result = GameManager.Instance.recipeManager.CheckAvailableRecipes(selectedIngredients);
+        List<string> inputRecipe = new List<string>();
+        foreach(string s in emptyCup.categorizedToppings.Values)
+        {
+            inputRecipe.Add(s);
+        }
+        bool result = GameManager.Instance.recipeManager.CheckAvailableRecipes(inputRecipe);
 
-        //if (result)
-        //{
-
-        //}
-        //else
-        //{
-
-        //}
-
-        var result = hasil;
         FinishBrewing(result);
     }
 
@@ -59,5 +60,6 @@ public class BrewingManager : MonoBehaviour
         brewingPanel.SetActive(false);
         selectedIngredients.Clear();
         isBrewingInProgress = false;
+        brewing.SetActive(false);
     }
 }

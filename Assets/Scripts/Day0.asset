@@ -169,6 +169,7 @@ MonoBehaviour:
     text: 
     tags:
     - brewing
+    - 'RecipeRequest: keju,bobba,matcha'
     hasBranch: 1
     branches:
     - condition: recipe_wrong
@@ -317,42 +318,42 @@ MonoBehaviour:
   - speaker: Gadis Baru
     text: kak ini.....
     tags:
-    - 'Animasi: Terdiam'
+    - 'Animation: Terdiam'
     hasBranch: 0
     branches: []
     nextStepIndex: 48
   - speaker: Gadis Baru
     text: enakkkk, bangggettttt
     tags:
-    - 'Animasi: excited'
+    - 'Animation: exited'
     hasBranch: 0
     branches: []
     nextStepIndex: 49
   - speaker: Gadis Baru
     text: Grenn tea nya khas banggeeet rasanya manis manis gimana gituh
     tags:
-    - 'Animasi: excited'
+    - 'Animation: exited'
     hasBranch: 0
     branches: []
     nextStepIndex: 50
   - speaker: Gadis Baru
     text: ditambah ini kenyal manis bobba nya tercampur rata
     tags:
-    - 'Animasi: excited'
+    - 'Animation: exited'
     hasBranch: 0
     branches: []
     nextStepIndex: 51
   - speaker: Gadis Baru
     text: diakhiri dengan creamy keju, ngebuat ini jadi Perfect bngeet
     tags:
-    - 'Animasi: excited'
+    - 'Animation: exited'
     hasBranch: 0
     branches: []
     nextStepIndex: 52
   - speaker: Gadis Baru
     text: (yapping yapping)
     tags:
-    - 'Animasi: excited'
+    - 'Animation: exited'
     hasBranch: 0
     branches: []
     nextStepIndex: 53
@@ -365,7 +366,7 @@ MonoBehaviour:
   - speaker: Gadis Baru
     text: (lanjut yapping)
     tags:
-    - 'Animasi: excited'
+    - 'Animation: exited'
     hasBranch: 0
     branches: []
     nextStepIndex: 55
@@ -420,7 +421,7 @@ MonoBehaviour:
   - speaker: Stephanie
     text: woahh jadi kaka......
     tags:
-    - 'Animasi: excited'
+    - 'Animation: excited'
     hasBranch: 0
     branches: []
     nextStepIndex: 64
@@ -470,10 +471,10 @@ MonoBehaviour:
   - speaker: 
     text: 
     tags:
-    - Audio notofication_in
+    - 'Audio: notification_in'
     hasBranch: 0
     branches: []
-    nextStepIndex: 71
+    nextStepIndex: 72
   - speaker: Jeremy
     text: siap masuk
     tags: []
@@ -520,6 +521,7 @@ MonoBehaviour:
     text: 
     tags:
     - 'Audio: belldor'
+    - 'Char Out: Stephani'
     hasBranch: 0
     branches: []
     nextStepIndex: 80

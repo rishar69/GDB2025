@@ -53,6 +53,8 @@ public class StoryManager : MonoBehaviour
 
     private string currentChar;
 
+    public List<string> correctRecipe = new List<string>();
+
     private void Awake()
     {
         continueButton.onClick.RemoveAllListeners();
@@ -192,6 +194,11 @@ public class StoryManager : MonoBehaviour
             else if(tag.StartsWith("NextDay"))
             {
                 GameManager.Instance.NextDay();
+            }
+            else if(tag.StartsWith("RecipeRequest: "))
+            {
+                string recipe = tag.Substring("RecipeRequest: ".Length);
+                correctRecipe = new List<string>(recipe.Split(','));
             }
             else
             {
