@@ -3967,7 +3967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stories:
-  - {fileID: 11400000, guid: 5618ea3b7c458b34c83769ad09de94b0, type: 2}
+  - {fileID: 11400000, guid: 3c7c9ec722a39104795c3b8e728de45e, type: 2}
   blackPanel: {fileID: 1841172213}
   dayPanel: {fileID: 1692114571}
   dialogPanel: {fileID: 890464112}
