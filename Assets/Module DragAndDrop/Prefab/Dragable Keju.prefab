@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd326672e18a255409b0496a35c3becc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toppingName: Keju
+  toppingName: keju
   type: 1
 --- !u!50 &-96853986764415052
 Rigidbody2D:

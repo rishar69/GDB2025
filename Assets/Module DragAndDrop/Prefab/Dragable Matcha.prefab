@@ -148,9 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd326672e18a255409b0496a35c3becc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toppingName: Matcha
+  toppingName: matcha
   type: 0
-  toppingColor: {r: 0.37647063, g: 0.227451, b: 0, a: 1}
 --- !u!50 &3027270696067433894
 Rigidbody2D:
   serializedVersion: 5

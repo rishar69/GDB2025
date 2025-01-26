@@ -397,6 +397,7 @@ MonoBehaviour:
   dialogText: {fileID: 313844024}
   continueButton: {fileID: 963439884}
   typingSpeed: 0.08
+  correctRecipe: []
 --- !u!1 &521857714
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,6 +443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brewingPanel: {fileID: 1245770799}
+  brewing: {fileID: 0}
 --- !u!1 &565373683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1883,7 +1885,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 735acae0055f30f4584322de872c3018, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  availableRecipes: []
+  availableRecipes:
+  - {fileID: 11400000, guid: 26101f2e7a161494fae3ba5f90be47a2, type: 2}
 --- !u!1 &1616818774
 GameObject:
   m_ObjectHideFlags: 0

@@ -411,8 +411,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1850779088}
     - target: {fileID: 8918782406932642932, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: spriteVariants.Array.data[0].toppingName
+      value: matcha
+      objectReference: {fileID: 0}
+    - target: {fileID: 8918782406932642932, guid: bf45291d099aec442864d26d15d05136, type: 3}
       propertyPath: spriteVariants.Array.data[3].toppingName
       value: Oreo
+      objectReference: {fileID: 0}
+    - target: {fileID: 8918782406932642932, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: spriteVariants.Array.data[5].toppingName
+      value: keju
+      objectReference: {fileID: 0}
+    - target: {fileID: 8918782406932642932, guid: bf45291d099aec442864d26d15d05136, type: 3}
+      propertyPath: spriteVariants.Array.data[7].toppingName
+      value: bobba
       objectReference: {fileID: 0}
     - target: {fileID: 8918782406932642932, guid: bf45291d099aec442864d26d15d05136, type: 3}
       propertyPath: 'spriteVariants.Array.data[3].sprites.Array.data[0]'
@@ -444,17 +456,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3262908330858805501, guid: bf45291d099aec442864d26d15d05136, type: 3}
   m_PrefabInstance: {fileID: 241346762}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &241346764 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8918782406932642932, guid: bf45291d099aec442864d26d15d05136, type: 3}
-  m_PrefabInstance: {fileID: 241346762}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f1cf9d0b26519c4b9bf1add4c315ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &313844022
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,8 +490,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: -70, y: -80}
+  m_AnchoredPosition: {x: -2.170288, y: -20}
+  m_SizeDelta: {x: -170.3699, y: -80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &313844024
 MonoBehaviour:
@@ -517,7 +518,7 @@ MonoBehaviour:
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c2daf5e409c865c48b96bc61c3e88227, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 7123735481039508401, guid: c2daf5e409c865c48b96bc61c3e88227, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -579,10 +580,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 21.256104, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &313844025
@@ -637,6 +638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40df122b1be75db43b650561e1b9970a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogPanel: {fileID: 890464112}
   speakerText: {fileID: 1357012620}
   dialogText: {fileID: 313844024}
   continueButton: {fileID: 963439884}
@@ -688,8 +690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brewingPanel: {fileID: 1245770799}
   brewing: {fileID: 1182062050}
-  dialogpanel: {fileID: 890464112}
-  emptyCup: {fileID: 241346764}
+  dialogPanel: {fileID: 890464112}
 --- !u!1 &537023637
 GameObject:
   m_ObjectHideFlags: 0
@@ -2492,7 +2493,7 @@ MonoBehaviour:
   m_text: NAMA NAMA NAMA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c2daf5e409c865c48b96bc61c3e88227, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 7123735481039508401, guid: c2daf5e409c865c48b96bc61c3e88227, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2864,7 +2865,7 @@ MonoBehaviour:
   m_text: Continue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c2daf5e409c865c48b96bc61c3e88227, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 7123735481039508401, guid: c2daf5e409c865c48b96bc61c3e88227, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

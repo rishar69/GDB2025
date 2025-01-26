@@ -28,6 +28,7 @@ public class StoryManager : MonoBehaviour
 {
 
     [Header("UI Components")]
+    public GameObject dialogPanel;
     public TextMeshProUGUI speakerText;
     public TextMeshProUGUI dialogText;
     public Button continueButton;
@@ -142,7 +143,7 @@ public class StoryManager : MonoBehaviour
         if (!string.IsNullOrEmpty(step.text))
         {
             currentFullText = step.text;
-
+            dialogPanel.SetActive(true);
             if (typingCoroutine != null)
             {
                 StopCoroutine(typingCoroutine);
