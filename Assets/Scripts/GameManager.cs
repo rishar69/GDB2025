@@ -1,9 +1,11 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -55,6 +57,12 @@ public class GameManager : MonoBehaviour
     public void NextDay()
     {
         currentDay++;
+        if(stories.Count >= currentDay)
+        {
+            //end
+            SceneManager.LoadScene("Menu");
+        }
+
         StartDay(currentDay);
     }
 
