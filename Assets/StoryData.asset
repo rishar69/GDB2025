@@ -1,0 +1,546 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: StoryData
+  m_EditorClassIdentifier: Assembly-CSharp::StoryData
+  steps:
+  - speaker: Jeremy
+    text: fiuhhhhh, akhirnya selesai juga membuat boba
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 1
+  - speaker: Jeremy
+    text: "\u2026.."
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 2
+  - speaker: Jeremy
+    text: sudah siang juga
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 3
+  - speaker: Jeremy
+    text: waktunya membuka Toko The Best Bobba Shop In Java
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 4
+  - speaker: 
+    text: beberapa jam kemudian
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 5
+  - speaker: Jeremy
+    text: Ini kembalian nya kaka terimakasih dan datang lagi ya
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 6
+  - speaker: Gadis Asing
+    text: Terimakasih Juga
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 7
+  - speaker: Gadis Asing
+    text: 
+    tags:
+    - 'Audio: belldor'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 8
+  - speaker: Jeremy
+    text: "\u2026.."
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 9
+  - speaker: Jeremy
+    text: masih siang, dan lumayan lah untuk saat ini
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 10
+  - speaker: Jeremy
+    text: lebih baik daripada hari kemarin
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 11
+  - speaker: 
+    text: 
+    tags:
+    - 'Audio: belldor'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 12
+  - speaker: Gadis Baru
+    text: (Gadis Asing Muncul)
+    tags:
+    - 'Char In: Gadis Baru'
+    - 'Animation: idle'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 13
+  - speaker: Jeremy
+    text: selamat datang di The Best Bobba Shop in java
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 14
+  - speaker: Jeremy
+    text: Ada yang bisa Dibantu?
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 15
+  - speaker: Gadis Baru
+    text: Aku Mau memesan sesuatu yang Populer disini apa ya?
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 16
+  - speaker: Jeremy
+    text: saat ini yang populer disini adalah Green Tea Bobba Cheese
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 17
+  - speaker: Jeremy
+    text: dengan perpaduan Green tea yang khas ditambah kenyal nya Bobba Premium
+      dan ditutup dengan Creamy Keju parut
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 18
+  - speaker: Jeremy
+    text: Dengan perpaduan kombinasi itu membuat minumanya populer di kalangan wanita
+      wanita sekarang
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 19
+  - speaker: Jeremy
+    text: Bagaimana? Tertarik Mencoba?
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 20
+  - speaker: Gadis Baru
+    text: Hmmmm.
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 21
+  - speaker: Gadis Baru
+    text: Sepertinya enak boleh deh
+    tags:
+    - 'Animation: exited'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 22
+  - speaker: Gadis Baru
+    text: satu Green tea Bobba Cheese
+    tags:
+    - 'Animation: exited'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 23
+  - speaker: Jeremy
+    text: Green tea Bobba Cheese satu, ditunggu ya
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 24
+  - speaker: 
+    text: 
+    tags:
+    - brewing
+    - 'RecipeRequest: keju,bobba,matcha'
+    hasBranch: 1
+    branches:
+    - condition: recipe_wrong
+      nextStepIndex: 25
+    - condition: recipe_correct
+      nextStepIndex: 30
+    nextStepIndex: 0
+  - speaker: Gadis Baru
+    text: eehhhh, apakah ini benar, kelihatannya tidak seperti Green Tea Bobba Cheese
+    tags:
+    - 'Animation: disappointed'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 26
+  - speaker: Gadis Baru
+    text: bisa tolong maaf banget, cek lagi
+    tags:
+    - 'Animation: disappointed'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 27
+  - speaker: Jeremy
+    text: Aduh maaf, sepertinya saya sedang tidak fokus
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 28
+  - speaker: Jeremy
+    text: saya buatkan lagi ya
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 11
+  - speaker: Jeremy
+    text: (Sebaiknya ku perhatikan request dan resep nya baik baik lain kali)
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 30
+  - speaker: Jeremy
+    text: ini dia Green tea Bobba Cheese datang
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 31
+  - speaker: Jeremy
+    text: silahkan dinikmati
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 32
+  - speaker: Gadis Baru
+    text: woahhh, jadi ini ya yang popuuler di sosmed saat ini
+    tags:
+    - 'Animation: exited'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 33
+  - speaker: Gadis Baru
+    text: sebelum di minum, seperti biasa foto dulu
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 34
+  - speaker: Gadis Baru
+    text: kak bisa bantu fotoin?
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 35
+  - speaker: Jeremy
+    text: boleh, siap ya
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 36
+  - speaker: Jeremy
+    text: 1...2...3...
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 37
+  - speaker: 
+    text: 
+    tags:
+    - 'Audio: capturepicture'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 38
+  - speaker: Gadis Baru
+    text: hehe lucu, terimakasih kak fotonya bagus
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 39
+  - speaker: Jeremy
+    text: ahh biasa saja
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 40
+  - speaker: Jeremy
+    text: tapi terimakasih
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 41
+  - speaker: Gadis Baru
+    text: aku cobain ya kak
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 42
+  - speaker: Jeremy
+    text: silakan, kalo tidak enak bilang saja
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 43
+  - speaker: Jeremy
+    text: garansi uang kembali jika tidak enak
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 44
+  - speaker: Gadis Baru
+    text: kaka bisa saja
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 45
+  - speaker: 
+    text: 
+    tags:
+    - 'Audio: sruput'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 46
+  - speaker: Gadis Baru
+    text: ...........
+    tags:
+    - 'Animation: Terdiam'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 47
+  - speaker: Gadis Baru
+    text: kak ini.....
+    tags:
+    - 'Animation: Terdiam'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 48
+  - speaker: Gadis Baru
+    text: enakkkk, bangggettttt
+    tags:
+    - 'Animation: exited'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 49
+  - speaker: Gadis Baru
+    text: Grenn tea nya khas banggeeet rasanya manis manis gimana gituh
+    tags:
+    - 'Animation: exited'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 50
+  - speaker: Gadis Baru
+    text: ditambah ini kenyal manis bobba nya tercampur rata
+    tags:
+    - 'Animation: exited'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 51
+  - speaker: Gadis Baru
+    text: diakhiri dengan creamy keju, ngebuat ini jadi Perfect bngeet
+    tags:
+    - 'Animation: exited'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 52
+  - speaker: Gadis Baru
+    text: (yapping yapping)
+    tags:
+    - 'Animation: exited'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 53
+  - speaker: Jeremy
+    text: ah iya kak terimaksih atas ulasannya
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 54
+  - speaker: Gadis Baru
+    text: (lanjut yapping)
+    tags:
+    - 'Animation: exited'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 55
+  - speaker: Jeremy
+    text: ah btw kak, saya baru pertama kali liat kaka di sini
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 56
+  - speaker: Stephanie
+    text: ah maaf kak sebelumnya, perkenalkan nama aku Stephanie
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 57
+  - speaker: Stephanie
+    text: aku baru pindah ke sekitaran sini seminggu yang lalu
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 58
+  - speaker: Stephanie
+    text: aku pindah karena ngikut papa kerja di kantor sekitaran sini
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 59
+  - speaker: Stephanie
+    text: jadi aku keliling-keliling buat ngehafalin area sekitaran sini
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 60
+  - speaker: Jeremy
+    text: ah saya Jeremy, salam kenal
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 61
+  - speaker: Jeremy
+    text: saya penjaga(Pemilik) toko Bobba ini
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 62
+  - speaker: Jeremy
+    text: ya baru beberapa bulanlah
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 63
+  - speaker: Stephanie
+    text: woahh jadi kaka......
+    tags:
+    - 'Animation: excited'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 64
+  - speaker: 
+    text: 
+    tags:
+    - 'Audio: messagein'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 65
+  - speaker: Jeremy
+    text: ada pesan masuk tuh
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 66
+  - speaker: Stephanie
+    text: ah iya dari papah ternyata
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 67
+  - speaker: Stephanie
+    text: aku disuruh pulang
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 68
+  - speaker: Stephanie
+    text: yasudah aku bayar pake QRIS ya kak
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 69
+  - speaker: Stephanie
+    text: total nya segini kan?
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 70
+  - speaker: Jeremy
+    text: iya betul
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 71
+  - speaker: 
+    text: 
+    tags:
+    - 'Audio: notification_in'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 72
+  - speaker: Jeremy
+    text: siap masuk
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 73
+  - speaker: Stephanie
+    text: kalo begitu terimakasih kak, aku pulang dulu
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 74
+  - speaker: Jeremy
+    text: iya terimakasih juga, hati hati dijalan
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 75
+  - speaker: Jeremy
+    text: dan datang lagi ya
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 76
+  - speaker: Stephanie
+    text: iya pasti dong
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 77
+  - speaker: Stephanie
+    text: soalnya kaka nya......
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 78
+  - speaker: Stephanie
+    text: hehe
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 79
+  - speaker: 
+    text: 
+    tags:
+    - 'Audio: belldor'
+    - 'Char Out: Stephani'
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 80
+  - speaker: Jeremy
+    text: ......
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 81
+  - speaker: 
+    text: (hari pun berlalu seperti biasanya)
+    tags: []
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 82
+  - speaker: 
+    text: 
+    tags:
+    - NextDay
+    hasBranch: 0
+    branches: []
+    nextStepIndex: 0
